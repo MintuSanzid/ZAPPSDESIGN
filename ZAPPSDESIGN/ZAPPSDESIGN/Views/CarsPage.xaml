@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="ZAPPSDESIGN.Views.CarsPage"
+             Title="Cars demo">
+
+    <ListView ItemsSource="{Binding Items}"
+              CachingStrategy="RecycleElement"
+              RowHeight="60"
+              HasUnevenRows="True">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="8">
+                        <Label Text="{Binding userName}" FontAttributes="Bold" />
+                        <Label Text="{Binding userName}" />
+                        <StackLayout 
+                                     Orientation="Horizontal"
+                                     Margin="0,30,0,0" IsVisible="{Binding IsVisible}">
+                            <Button Text="Details"
+                                    BackgroundColor="DarkGreen"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="14" />
+                            <Button Text="Edit"
+                                    BackgroundColor="DodgerBlue"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="14"/>
+                            <Button Text="Delete"
+                                    BackgroundColor="DarkRed"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="14" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>
+

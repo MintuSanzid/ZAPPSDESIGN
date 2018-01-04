@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.AutoLogin</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.AutoLogin.CrossAutoLogin">
+            <summary>
+            Cross platform AutoLogin implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.CrossAutoLogin.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.AutoLogin.AutoLoginImplementation">
+            <summary>
+            Implementation for Feature
+            </summary>
+        </member>
+        <member name="M:Plugin.AutoLogin.AutoLoginImplementation.SaveUserInfos(System.String,System.String,System.Boolean)">
+            <summary>
+            Saves user's infos as shared preferences.
+            </summary>
+            <param name="email">Mail address to save.</param>
+            <param name="password">Password to save.</param>
+            <param name="connected">Status of user.</param>
+        </member>
+        <member name="M:Plugin.AutoLogin.AutoLoginImplementation.DeleteUserInfos">
+            <summary>
+            Deletes current saved user from shared preferences.
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.AutoLoginImplementation.UserPassword">
+            <summary>
+            Returns saved user password. 
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.AutoLoginImplementation.UserEmail">
+            <summary>
+            Returns saved user mail address.
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.AutoLoginImplementation.UserIsSaved">
+            <summary>
+            Returns True if a user was saved as a shared preference.
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.AutoLoginImplementation.UserIsConnected">
+            <summary>
+            Returns true if the saved user didnt disconnect.
+            </summary>
+        </member>
+    </members>
+</doc>

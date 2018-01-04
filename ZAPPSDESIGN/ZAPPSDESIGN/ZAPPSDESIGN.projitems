@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>5d44a097-8c77-4e1d-bafc-988bc025561d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ZAPPSDESIGN</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuItems\MasterPageItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BldUserReg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Car.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountryModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LgDistrictModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LgDivisionModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LgThanasModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LgUnionModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LgVillagesModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LoginModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RegistrationModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserListModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RestClient\RestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RestClient\TaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\BldUserRegServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\CountryServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LgDistrictServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LgDivisionServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LgThanasServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LgUnionServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LgVillagesServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LoginDataServiceController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MyHTTP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MyHTTPService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\RegistrationDataServiceController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BldUserRegViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CarsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountryViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LgDistrictViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LgDivisionsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LgThanasViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LgUnionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LgVillagesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ListDataViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UserListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CarsPage.xaml.cs">
+      <DependentUpon>CarsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GridUI.xaml.cs">
+      <DependentUpon>GridUI.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListData.xaml.cs">
+      <DependentUpon>ListData.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Page3.xaml.cs">
+      <DependentUpon>Page3.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TableUI.xaml.cs">
+      <DependentUpon>TableUI.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\UserListView.xaml.cs">
+      <DependentUpon>UserListView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\View1.xaml.cs">
+      <DependentUpon>View1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\View2.xaml.cs">
+      <DependentUpon>View2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\View3.xaml.cs">
+      <DependentUpon>View3.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\View4.xaml.cs">
+      <DependentUpon>View4.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\View1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\View2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\View3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\View4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\UserListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ListData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CarsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Page3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TableUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

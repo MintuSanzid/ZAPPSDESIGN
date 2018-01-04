@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ZAPPSDESIGN.ViewModels"
+             x:Class="ZAPPSDESIGN.Views.UserListView"
+             BackgroundColor="Silver"
+             Title="List Of Users">
+
+    <ContentPage.BindingContext>
+        <local:BldUserRegViewModel />
+    </ContentPage.BindingContext>
+
+    <ListView ItemsSource="{Binding Items}"  HasUnevenRows="True"  ItemTapped="ListView_OnItemTapped" Margin="0,80"  BackgroundColor="Silver">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
+                            <Label Text="{Binding UserId}"    TextColor="Navy" FontSize="16"/>
+                            <Label Text="{Binding userName}"  TextColor="Navy" FontSize="16"/>
+                            <Label Text="{Binding UserAddress}" TextColor="Navy" FontSize="16"/>
+                            <Label Text="{Binding UserPhoneNo}" TextColor="Navy" FontSize="16"/>
+                            <Label Text="{Binding UserEmail}" TextColor="Navy" FontSize="16"/>                            
+                        </StackLayout>
+                       <StackLayout IsVisible="{Binding IsVisible}"  Orientation="Horizontal" Margin="0,30,0,0">
+                            <Button Text="Details" BackgroundColor="DarkGreen" TextColor="White" WidthRequest="100"  FontSize="16" />
+                            <Button Text="Edit" BackgroundColor="DodgerBlue"  TextColor="White" WidthRequest="100" FontSize="16"/>
+                            <Button Text="Delete" BackgroundColor="DarkRed" TextColor="White" WidthRequest="100" FontSize="16" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ZAPPSDESIGN.ViewModels"
+             x:Class="ZAPPSDESIGN.Views.UserListView"
+             BackgroundColor="Silver">
+    <ContentPage.BindingContext>
+        <local:UserListViewModel/>
+    </ContentPage.BindingContext>
+    <Label Text="List of Users" TextColor="Navy" FontSize="12"/>
+    <ListView ItemsSource="{Binding Products}"
+              HasUnevenRows="True"
+              ItemTapped="ListView_OnItemTapped"
+              Margin="0,80"
+              BackgroundColor="Silver" x:Name="ListView1">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="20">
+                        <Label Text="{Binding userName}" TextColor="Navy"  FontSize="12"/>                        
+                        <StackLayout 
+                                     Orientation="Horizontal"
+                                     Margin="0,30,0,0" IsVisible="{Binding IsVisible}">
+                            <Button Text="Details"
+                                    BackgroundColor="DarkGreen"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="14" />
+                            <Button Text="Edit"
+                                    BackgroundColor="DodgerBlue"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="14"/>
+                            <Button Text="Delete"
+                                    BackgroundColor="DarkRed"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="14" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>-->
+

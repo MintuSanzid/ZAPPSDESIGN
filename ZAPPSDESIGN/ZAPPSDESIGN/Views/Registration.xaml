@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZAPPSDESIGN.Views.Registration"
+             xmlns:local="clr-namespace:CheckBox"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:custom="clr-namespace:XFormsRadioButton.CustomControls;assembly=XFormsRadioButton">
+    <!--xmlns:ZAPPSDESIGN.ViewModels="clr-namespace:ZAPPSDESIGN.ViewModels;assembly=ZAPPSDESIGN"
+             BindingContext="ZAPPSDESIGN.ViewModels.BldUserRegViewModel"-->
+
+    <!--<ContentPage.BindingContext>
+        -->
+    <!--<viewModels:BldUserRegViewModel/>-->
+    <!--<ViewModels:BldUserRegViewModel/>-->
+    <!--
+    </ContentPage.BindingContext>-->
+    <ContentPage.Content >
+        <Grid>
+            <Label Text="Registration Form"  TextColor="#555" FontSize="20" FontAttributes="Bold" XAlign="Center"/>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Padding="30" Spacing="2" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="{Binding Message}" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text="Donar Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Entry x:Name="userName" Text="{Binding userName}"  Keyboard="Text" Placeholder="Enter Name" PlaceholderColor="#CCC" FontSize="12" TextColor="#555"  />
+                        <Label Text="Donar Address"  TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Entry x:Name="UserAddress" Text="{Binding UserAddress}" Placeholder="Enter correct password" Keyboard="Default" IsPassword="False" FontSize="12" PlaceholderColor="#CCC" TextColor="#555"/>
+                        <Label Text="Donar Phone No" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Entry x:Name="UserPhoneNo" Text="{Binding UserPhoneNo}" Placeholder="Enter Phone Numner" Keyboard="Default" IsPassword="false" FontSize="12" PlaceholderColor="#CCC" TextColor="#555"/>
+                        <Label Text="Donar Email Id" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Entry x:Name="UserEmail" Text="{Binding UserEmail}" Keyboard="Text" Placeholder="Enter Name" PlaceholderColor="#CCC" FontSize="12" TextColor="#555" />
+                        <Label Text="Login Id" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Entry x:Name="LoginId" Text="{Binding LoginId}" Keyboard="Text" Placeholder="Enter Name" PlaceholderColor="#CCC" FontSize="12" TextColor="#555" />
+                        <Label Text="Password" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Entry x:Name="Password" Text="{Binding Password}" Keyboard="Text" Placeholder="Enter Name" PlaceholderColor="#CCC" FontSize="12" TextColor="#555" />
+                        <Label Text="Add Blood Donate Location" TextColor="Maroon" FontSize="12" FontAttributes="Bold" XAlign="Center"/>                        
+
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                <Label Text="Country Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                                <!--<Label Text="{Binding Source={x:Reference picker}, Path=SelectedItem}" />-->
+                                <Picker x:Name="Countries" Title="Select a country" ItemsSource="{Binding Items}" ItemDisplayBinding="{Binding CountryName}"><!--SelectedItem="{Binding SelectedVehicle}" SelectedIndexChanged="Picker_SelectedIndexChanged"-->
+                                    <!--<Picker.Items>
+                                        <x:String>India</x:String>
+                                        <x:String>United States</x:String>
+                                        <x:String>Australia</x:String>
+                                        <x:String>Bangladesh</x:String>
+                                        <x:String>Canada</x:String>
+                                        <x:String>China</x:String>
+                                        <x:String>Germany</x:String>
+                                        <x:String>Mauritius</x:String>
+                                        <x:String>Nepal</x:String>
+                                        <x:String>Brazil</x:String>
+                                    </Picker.Items>-->
+                                </Picker>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                <Label Text="Division Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                                <Picker x:Name="Division" Title="Select a division" ItemsSource="{Binding ItemsDivision}" ItemDisplayBinding="{Binding DivisionName}"></Picker>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                <Label Text="District Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                                <Picker x:Name="District" Title="Select a district" ItemsSource="{Binding ItemsDistrict}" ItemDisplayBinding="{Binding DistrictName}"></Picker>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                <Label Text="Upazila Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                                <Picker x:Name="Thana" Title="Select a thana" ItemsSource="{Binding ItemsThana}" ItemDisplayBinding="{Binding ThanaName}"></Picker>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                <Label Text="Ward/Union" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                                <Picker x:Name="Ward" Title="Select a union / ward" ItemsSource="{Binding ItemsUnion}" ItemDisplayBinding="{Binding UnionName}"></Picker>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                <Label Text="Village" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                                <Picker x:Name="Village" Title="Select a village" ItemsSource="{Binding ItemsVillage}" ItemDisplayBinding="{Binding VillageName}"></Picker>
+                            </StackLayout>
+                        </StackLayout>                       
+                        <Label Text="Condition" TextColor="#555" FontSize="12" FontAttributes="Bold" />
+                        <controls:CheckBox DefaultText="Default text" HorizontalOptions="FillAndExpand" TextColor="Green" FontSize="12" FontName="AmericanTypewriter"/>
+                    </StackLayout>
+                    <StackLayout Padding="30" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Button x:Name="BtnLogin" Text="Login" BorderColor="#CB9600" BackgroundColor="#F4B400" Clicked="Registration_clicked"/>
+                        <!--<Button x:Name="myButton" Command="{Binding RegisterCommand}" CommandParameter="{x:Reference myButton}" Text = "Registration"  BackgroundColor="Maroon" TextColor="White"/>-->
+                        <!--<Button x:Name="myButton" Command="{Binding BindingContext.RegisterCommand, Source={x:Reference Page}" CommandParameter="{Binding BindingContext, Source={x:Reference SomeControl}"/>-->
+                        <!--Clicked="Registration_clicked"-->
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- The '{Binding IsBusy}' is going to search the 'IsBusy' property inside the 'BindingContext'. In our case, is the code behind -->
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="{Binding IsBusy}" VerticalOptions="Center" HorizontalOptions="Center" Color="Blue" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

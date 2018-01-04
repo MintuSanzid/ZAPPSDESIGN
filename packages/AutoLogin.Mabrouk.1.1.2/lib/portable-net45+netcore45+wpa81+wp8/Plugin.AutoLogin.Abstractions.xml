@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.AutoLogin.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.AutoLogin.Abstractions.IAutoLogin">
+            <summary>
+            Interface for AutoLogin
+            </summary>
+        </member>
+        <member name="M:Plugin.AutoLogin.Abstractions.IAutoLogin.SaveUserInfos(System.String,System.String,System.Boolean)">
+            <summary>
+            Method to save user's infos as shared preferences.
+            </summary>
+            <param name="email">Mail address to save.</param>
+            <param name="password">Password to save.</param>
+            <param name="connected">Status of user.</param>
+        </member>
+        <member name="M:Plugin.AutoLogin.Abstractions.IAutoLogin.DeleteUserInfos">
+            <summary>
+            Method to  delete current saved user from shared preferences.
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.Abstractions.IAutoLogin.UserPassword">
+            <summary>
+            Prop. to return saved user password. 
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.Abstractions.IAutoLogin.UserEmail">
+            <summary>
+            Prop. to return saved user mail address.
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.Abstractions.IAutoLogin.UserIsSaved">
+            <summary>
+            Prop. to return True if a user was saved as a shared preference.
+            </summary>
+        </member>
+        <member name="P:Plugin.AutoLogin.Abstractions.IAutoLogin.UserIsConnected">
+            <summary>
+            Prop. to return true if the saved user didnt disconnect.
+            </summary>
+        </member>
+    </members>
+</doc>

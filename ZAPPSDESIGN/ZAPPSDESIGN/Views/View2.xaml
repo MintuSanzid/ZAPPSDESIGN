@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZAPPSDESIGN.Views.View2"
+             xmlns:local="clr-namespace:CheckBox"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:custom="clr-namespace:XFormsRadioButton.CustomControls;assembly=XFormsRadioButton">
+    <ContentPage.Content >
+        <Grid>
+            <Label Text="Search Form"  TextColor="#555" FontSize="20" FontAttributes="Bold" XAlign="Center"/>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Padding="30" Spacing="2" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">                        
+                        <Label Text="Country Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <!--<Entry  Keyboard="Text" Placeholder="Enter Name" PlaceholderColor="#CCC" FontSize="12" TextColor="#555" />-->
+                        <Picker x:Name="Countries">
+                            <Picker.Items>
+                                <x:String>India</x:String>
+                                <x:String>United States</x:String>
+                                <x:String>Australia</x:String>
+                                <x:String>Bangladesh</x:String>
+                                <x:String>Canada</x:String>
+                                <x:String>China</x:String>
+                                <x:String>Germany</x:String>
+                                <x:String>Mauritius</x:String>
+                                <x:String>Nepal</x:String>
+                                <x:String>Brazil</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Label Text="Division Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Picker x:Name="Division">
+                            <Picker.Items>
+                                <x:String>India</x:String>
+                                <x:String>United States</x:String>
+                                <x:String>Australia</x:String>
+                                <x:String>Bangladesh</x:String>
+                                <x:String>Canada</x:String>
+                                <x:String>China</x:String>
+                                <x:String>Germany</x:String>
+                                <x:String>Mauritius</x:String>
+                                <x:String>Nepal</x:String>
+                                <x:String>Brazil</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Label Text="District Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Picker x:Name="District">
+                            <Picker.Items>
+                                <x:String>India</x:String>
+                                <x:String>United States</x:String>
+                                <x:String>Australia</x:String>
+                                <x:String>Bangladesh</x:String>
+                                <x:String>Canada</x:String>
+                                <x:String>China</x:String>
+                                <x:String>Germany</x:String>
+                                <x:String>Mauritius</x:String>
+                                <x:String>Nepal</x:String>
+                                <x:String>Brazil</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Label Text="Upazila Name" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Picker x:Name="Upazila">
+                            <Picker.Items>
+                                <x:String>India</x:String>
+                                <x:String>United States</x:String>
+                                <x:String>Australia</x:String>
+                                <x:String>Bangladesh</x:String>
+                                <x:String>Canada</x:String>
+                                <x:String>China</x:String>
+                                <x:String>Germany</x:String>
+                                <x:String>Mauritius</x:String>
+                                <x:String>Nepal</x:String>
+                                <x:String>Brazil</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Label Text="Ward/Union" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Picker x:Name="Ward">
+                            <Picker.Items>
+                                <x:String>India</x:String>
+                                <x:String>United States</x:String>
+                                <x:String>Australia</x:String>
+                                <x:String>Bangladesh</x:String>
+                                <x:String>Canada</x:String>
+                                <x:String>China</x:String>
+                                <x:String>Germany</x:String>
+                                <x:String>Mauritius</x:String>
+                                <x:String>Nepal</x:String>
+                                <x:String>Brazil</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Label Text="Village" TextColor="#555" FontSize="12" FontAttributes="Bold"/>
+                        <Picker x:Name="Village">
+                            <Picker.Items>
+                                <x:String>India</x:String>
+                                <x:String>United States</x:String>
+                                <x:String>Australia</x:String>
+                                <x:String>Bangladesh</x:String>
+                                <x:String>Canada</x:String>
+                                <x:String>China</x:String>
+                                <x:String>Germany</x:String>
+                                <x:String>Mauritius</x:String>
+                                <x:String>Nepal</x:String>
+                                <x:String>Brazil</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Grid RowSpacing="5" ColumnSpacing="5" BackgroundColor="Black">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="Icon.png" Grid.Row="0" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+
+                            <Image Source="Icon.png" Grid.Row="0" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+
+                            <Image Source="Icon.png" Grid.Row="1" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+
+                            <Image Source="Icon.png" Grid.Row="1" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+                            
+                           
+
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Padding="30" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                        <Button x:Name="BtnLogin" Text="Login" BorderColor="#CB9600" BackgroundColor="#F4B400" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <!-- The '{Binding IsBusy}' is going to search the 'IsBusy' property inside the 'BindingContext'. In our case, is the code behind -->
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="{Binding IsBusy}" VerticalOptions="Center" HorizontalOptions="Center" Color="Blue" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZAPPSDESIGN.Views.View2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms! View2"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>-->

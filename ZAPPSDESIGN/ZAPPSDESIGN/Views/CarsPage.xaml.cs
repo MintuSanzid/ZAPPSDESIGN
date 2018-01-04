@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ZAPPSDESIGN.ViewModels;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using ZAPPSDESIGN.Models;
+
+namespace ZAPPSDESIGN.Views
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class CarsPage : ContentPage
+	{
+		public CarsPage ()
+		{
+			InitializeComponent ();
+            BindingContext = new CarsViewModel();
+        }
+        
+    }
+}
